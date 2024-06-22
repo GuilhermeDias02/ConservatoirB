@@ -12,7 +12,7 @@ class Utilisateur {
     private string $description_prof;
     private Role $role;
 
-    public function __construct(string $uuid, string $nom, string $prenom, string $adresse, string $telephone, string $email, string $mdp, string $description_prof, Role $role){
+    public function __construct(string $uuid, string $nom, string $prenom, string $adresse, string $telephone, string $email, string $mdp, string $description_prof = null, Role $role){
         $this->uuid = $uuid;
         $this->nom = $nom;
         $this->prenom = $prenom;

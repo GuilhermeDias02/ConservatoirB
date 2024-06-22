@@ -1,6 +1,6 @@
 <?php
 
-class RegisterDto {
+class RegisterDto implements JsonSerializable{
     private string $nom;
     private string $prenom;
     private string $adresse;
@@ -15,5 +15,9 @@ class RegisterDto {
         $this->telephone = $telephone;
         $this->email = $email;
         $this->mdp = $mdp;
+    }
+
+    public function jsonSerialize(){
+        return get_object_vars($this);
     }
 }
