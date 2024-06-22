@@ -1,3 +1,88 @@
-footer {
+* {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.logo {
+    max-width: 40px;
+}
+
+.navbar {
+    background-color: white !important;
+    box-shadow: 0 10 #BDE3FF;
+}
+
+figure.vitrine {
+    background-image: url("../images/conservatoire.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
     text-align: center;
+}
+
+figure.vitrine > .btn {
+    margin-top: 400px;
+}
+
+figure.vitrine .btn-primary {
+    --bs-btn-color: black;
+    --bs-btn-bg: white;
+    --bs-btn-border-color: white;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bde3ff;
+    --bs-btn-hover-border-color: #bde3ff;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0a58ca;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: white;
+    --bs-btn-disabled-border-color: white;
+}
+
+section {
+    margin: 20px;
+    padding: 10px;
+}
+
+section .card-img-top {
+    height: auto;
+}
+
+section .bg-primary {
+    background-color: #bde3ff !important;
+}
+
+section .btn-primary {
+    --bs-btn-color: black;
+    --bs-btn-bg: white;
+    --bs-btn-border-color: white;
+    --bs-btn-hover-color: #black;
+    --bs-btn-hover-bg: #e6e6e6;
+    --bs-btn-hover-border-color: #e6e6e6;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #1e1e1e;
+    --bs-btn-active-border-color: #1e1e1e;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: white;
+    --bs-btn-disabled-border-color: white;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    background-color: darkgrey;
+}
+
+footer * {
+    margin: 0;
 }
