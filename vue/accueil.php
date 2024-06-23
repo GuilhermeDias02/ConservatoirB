@@ -1,5 +1,7 @@
 <?php include "header.php"; ?>
 
+<?php include "navbar.php"; ?>
+
 <?php include "vitrine.php"; ?>
 
 <main>
@@ -12,53 +14,4 @@
     </section>
 </main>
 
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
 <?php include "Footer.php"; ?>
