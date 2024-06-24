@@ -106,6 +106,19 @@ section .btn-primary {
     margin: 300px;
 }
 
+#main_inscription {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inscription {
+    background-color: #e6e6e6;
+    padding: 40px;
+    margin-top: 150px;
+    margin: 150px;
+}
+
 footer {
     position: relative;
     text-align: center;

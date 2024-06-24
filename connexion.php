@@ -4,7 +4,7 @@
  */
 $dir = getcwd();
 $session = session_start();
-
+$title = "Inscription";
 
 /**
  * Main
