@@ -7,7 +7,7 @@
                 <?php
                 if ($_SESSION['compte'] != "visiteur") {
                     $_SESSION["voir_classe"] = 1;
-                    echo '<a href="details_classe.php" class="btn btn-primary">Voir</a>';
+                    echo '<a href="details_classe.php?classe=1" class="btn btn-primary">Voir</a>';
                 }
                 ?>
             </div>
@@ -21,7 +21,7 @@
                 <?php
                 if ($_SESSION['compte'] != "visiteur") {
                     $_SESSION["voir_classe"] = 2;
-                    echo '<a href="details_classe.php" class="btn btn-primary">Voir</a>';
+                    echo '<a href="details_classe.php?classe=2" class="btn btn-primary">Voir</a>';
                 }
                 ?>
             </div>
@@ -35,7 +35,7 @@
                 <?php
                 if ($_SESSION['compte'] != "visiteur") {
                     $_SESSION["voir_classe"] = 3;
-                    echo '<a href="details_classe.php" class="btn btn-primary">Voir</a>';
+                    echo '<a href="details_classe.php?classe=3" class="btn btn-primary">Voir</a>';
                 }
                 ?>
             </div>

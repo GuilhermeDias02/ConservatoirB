@@ -1,4 +1,4 @@
-<?php include "header.php"; ?>
+<?php include_once "header.php"; ?>
 
 <?php $_SESSION['page'] = "connexion" ?>
 
@@ -20,4 +20,4 @@
     </section>
 </main>
 
-<?php include "Footer.php"; ?>
+<?php include_once "Footer.php"; ?>

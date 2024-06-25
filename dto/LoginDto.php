@@ -1,4 +1,5 @@
 <?php
+require_once "conf.php";
 
 class LoginDto implements JsonSerializable
 {
@@ -38,7 +39,7 @@ class LoginDto implements JsonSerializable
     {
         $json = json_encode($this);
 
-        $url = api_url . "auth/login";
+        $url = api_url . "/auth/login";
 
         // // $html = file_get_contents($url);
 
@@ -88,10 +89,12 @@ class LoginDto implements JsonSerializable
 
         $response = curl_exec($curl);
 
-        $json = json_decode($response, true);
+        curl_close($curl);
+        
+        // $json = json_decode($response, true);
         // curl_close($curl);
         // echo $response;
 
-        return $json;
+        return $response;
     }
 }

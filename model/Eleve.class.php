@@ -10,8 +10,9 @@ class Eleve
     private bool $soi_meme;
     private bool $demande_inscription;
     private Utilisateur $utilisateur;
+    private Classe $classe;
 
-    private function __construct(string $uuid, string $nom, string $prenom, DateTime $date_naissance, bool $soi_meme, bool $demande_inscription, Utilisateur $utilisateur)
+    private function __construct(string $uuid, string $nom, string $prenom, DateTime $date_naissance, bool $soi_meme = false, bool $demande_inscription = false, Utilisateur $utilisateur, Classe $classe)
     {
         $this->uuid = $uuid;
         $this->nom = $nom;
@@ -19,6 +20,9 @@ class Eleve
         $this->date_naissance = $date_naissance;
         $this->soi_meme = $soi_meme;
         $this->demande_inscription = $demande_inscription;
+        $this->utilisateur = $utilisateur;
+        $this->classe = $classe;
+
     }
 
     public static function getAll()

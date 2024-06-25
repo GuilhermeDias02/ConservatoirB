@@ -9,11 +9,12 @@
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="ajouter_eleve.php">Ajouter élève</a></li>
             <li><a class="dropdown-item" href="#">Voir notes</a></li>
+            <li><a class="dropdown-item" href="#">Payements</a></li>
         </ul>
     </li>
 
     <?php
-    if ($_SESSION["compte"] == "prof") {
+    if ($_SESSION["compte"] == "Prof") {
         echo '
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -21,13 +22,14 @@
             </a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Rentrer notes</a></li>
+                <li><a class="dropdown-item" href="#">Salaires</a></li>
             </ul>
         </li>';
     }
     ?>
 
     <?php
-    if ($_SESSION["compte"] == "admin") {
+    if ($_SESSION["compte"] == "Admin") {
         echo '
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">

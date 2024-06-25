@@ -9,4 +9,4 @@ $title = "Inscription";
 /**
  * Main
  */
-include "vue/inscription.php";
+include_once "vue/inscription.php";

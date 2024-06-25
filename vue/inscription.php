@@ -1,4 +1,4 @@
-<?php include "header.php"; ?>
+<?php include_once "header.php"; ?>
 
 <?php $_SESSION['page'] = "inscription" ?>
 
@@ -27,12 +27,12 @@
                     aria-describedby="emailHelp">
             </div>
             <div class="mb-3 row">
-                <label for="exampleInputPassword1" class="form-label col-xs-6">Mot de passe</label>
-                <input name="mdp" type="password" class="form-control col-xs-6" id="exampleInputPassword1">
+                <label for="mdp" class="form-label col-xs-6">Mot de passe</label>
+                <input name="mdp" type="password" class="form-control col-xs-6" id="mdp">
             </div>
             <button type="submit" class="btn btn-primary">S'inscrire</button>
         </form>
     </section>
 </main>
 
-<?php include "Footer.php"; ?>
+<?php include_once "Footer.php"; ?>

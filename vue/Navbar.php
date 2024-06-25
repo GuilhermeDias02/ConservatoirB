@@ -18,7 +18,7 @@
         <div class="abc">
             <?php
             if ($_SESSION['compte'] != "visiteur") {
-                include "vue/recherche.php";
+                include_once "vue/recherche.php";
             }
             ?>
         </div>
@@ -26,7 +26,7 @@
         <div class="abc">
             <?php
             if ($_SESSION['compte'] != "visiteur") {
-                include "vue/raccourcis.php";
+                include_once "vue/raccourcis.php";
             }
             ?>
         </div>
@@ -35,15 +35,15 @@
         if ($_SESSION['compte'] == "visiteur") {
             echo '<a href="connexion.php">se connecter</a>';
         } else {
-            echo "<a href='profil.php'>{$_SESSION['nom']}<br/>{$_SESSION['prenom']}</a>";
+            echo "<a href='profil.php'>".htmlspecialchars($_SESSION['nom'])."<br/>".htmlspecialchars($_SESSION['prenom'])."</a>";
         }
         ?>
 
         <?php
         if ($_SESSION['compte'] != "visiteur") {
             echo '<div class="collapse navbar-collapse" id="navbarScroll">';
-            include "vue/recherche.php";
-            include "vue/raccourcis.php";
+            include_once "vue/recherche.php";
+            include_once "vue/raccourcis.php";
             echo '</div>';
         }
         ?>
